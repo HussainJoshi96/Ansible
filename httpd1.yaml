@@ -1,6 +1,7 @@
 ---
 - name: Install and start httpd service
   hosts: all
+  become: yes
   tasks:
     - name: Install httpd package
       ansible.builtin.yum:
