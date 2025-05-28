@@ -1,1 +1,6 @@
 - name : Hussain
+  hosts: frontend
+  hosts: backend
+
+- name: ping the server
+  ansible.builtin.ping
