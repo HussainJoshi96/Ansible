@@ -1,9 +1,9 @@
 ---
-- name: install httpd packae
-    host: all
-    task:
+- name: install httpd package
+    hosts: all
+    tasks:
     - name: install httpd package
-        ansible.builtin.yum 
+        ansible.builtin.yum:
         name: httpd
         state: present
 
