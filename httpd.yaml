@@ -2,13 +2,14 @@
 - name: install httpd package
     hosts: all
     tasks:
-    - name: install httpd package
-        ansible.builtin.yum:
-        name: httpd
-        state: present
-       
-    - name: Ensure httpd is started
-            ansible.builtin.service:
+        - name: install httpd package
+          ansible.builtin.yum:
             name: httpd
-            state: started
-            enabled: yes
+            state: present
+
+        - name: Ensure httpd is started
+
+                ansible.builtin.service:
+                name: httpd
+                state: started
+                enabled: yes
