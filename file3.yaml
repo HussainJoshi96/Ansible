@@ -1,6 +1,7 @@
 ---
-- name: Hussain
+- name: Hussain's Playbook
   hosts: all
+  become: yes
   tasks:
-    - name: ping the server
+    - name: Ping all hosts
       ansible.builtin.ping:
