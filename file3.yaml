@@ -1,4 +1,6 @@
-- name : Hussain
-  hosts : all
-- name: ping the server
-  ansible.builtin.ping
+---
+- name: Hussain
+  hosts: all
+  tasks:
+    - name: ping the server
+      ansible.builtin.ping:
